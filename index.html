@@ -4,6 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>Steve Gagnon</title>
+	<style>
+		body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif }
+		#work-experience dt { display: flex; align-items: center; }
+		#work-experience dt h4 { flex: 1; }
+		#skills > ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+	</style>
 </head>
 
 <body>
@@ -17,30 +23,28 @@
 	<main>
 		<section id="work-experience">
 			<h3>Work Experience</h3>
-			<p>
-				<div>
-					<div>
-						<div>
-							<strong>Front End Developer</strong> at
-							<a href="https://www.expressimage.com/">Express Image Digital</a>
-						</div>
-						<time datetime="P40D">2018 - 2019</time>
-					</div>
+			<dl>
+				<dt>
+					<h4>Freelance Developer</h4>
+					<time>2018 - present</time>
+				</dt>
+				<dd>
 					<ul>
+						<li>Containerized and wrote CD pipelines to bring new and legacy services into a Kubernetes cluster.</li>
+						<li>Migrated CD pipelines and charts from Helm 2 to Helm 3.</li>
+						<li>Translated a realtime audio classifier from Python to C for a IoT project.</li>
+						<li>Tracked down and resolved an issue in IndexedDB that was corrupting large records.</li>
 						<li>Led the development of a new CMS front end using TypeScript, SASS and Mithril.</li>
-						<li>Eliminated a series of memory leaks caused by detached DOM elements in a long running Single Page Application.</li>
-						<li>Tracked down and resolved an issue in IndexedDB that was corrupting cached media.</li>
+						<li>Eliminated a series of memory leaks caused by detached DOM elements in a long running application.</li>
+						<li>Performed client side optimization for a Magento project including removal of dead CSS and JS, reducing reflows, removal of unneeded dom nodes, and asynchronously loading of content.</li>
 					</ul>
-				</div>
+				</dd>
 
-				<div>
-					<div>
-						<div>
-							<strong>Full Stack Developer</strong> at
-							<a href="https://www.catsone.com/">CATS Software</a>
-						</div>
-						<time datetime="P1460D">2014 - 2018</time>
-					</div>
+				<dt>
+					<h4>Full Stack Developer at <a href="https://www.catsone.com/">CATS Software</a></h4>
+					<time datetime="P1460D">2014 - 2018</time>
+				</dt>
+				<dd>
 					<ul>
 						<li>Led the development of a browser extension using TypeScript, React and Styled Components that can scrape candidate data from various job boards before matching and storing that data.</li>
 						<li>Reversed engineered APIs and developed scrapers to extract candidate data from LinkedIn, Indeed, Monster, Xing, Github, Careerbuilder and other job boards.</li>
@@ -56,16 +60,13 @@
 						<li>Contributed to planning, demonstrations, restrospective, etc as a Scrum team member.</li>
 						<li>Mentored junior developers and did my best to answer any question.</li>
 					</ul>
-				</div>
+				</dd>
 
-				<div>
-					<div>
-						<div>
-							<strong>Full Stack Developer</strong> at
-							<a href="http://cleanerbusiness.com/">Shah Corp</a>
-						</div>
-						<time datetime="P3650D">2004 - 2014</time>
-					</div>
+				<dt>
+					<h4>Full Stack Developer at <a href="http://cleanerbusiness.com/">Shah Corp</a></h4>
+					<time datetime="P3650D">2004 - 2014</time>
+				</dt>
+				<dd>
 					<ul>
 						<li>Developed interfaces for point of sale invoicing, payments, racking, reporting and route delivery.</li>
 						<li>Developed racking and inventory control software in C# for handheld barcode scanners running Windows Embedded Compact.</li>
@@ -79,8 +80,8 @@
 						<li>Worked with support staff to develop tools and procedures to reduce errors and save time.</li>
 						<li>Optimized database queries, indexing and procedures.</li>
 					</ul>
-				</div>
-			</p>
+				</dd>
+			</dl>
 		</section>
 
 		<section id="skills">
